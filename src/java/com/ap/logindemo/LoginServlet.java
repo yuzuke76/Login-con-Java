@@ -1,8 +1,3 @@
-﻿/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.ap.logindemo;
 
 import java.io.IOException;
@@ -14,10 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-/**
- *
- * @author prof.andreapollini
- */
+
 @WebServlet(name = "LoginServlet", urlPatterns = {"/login"})
 public class LoginServlet extends HttpServlet {
 
@@ -34,7 +26,7 @@ public class LoginServlet extends HttpServlet {
     
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String paramUsername = req.getParameter("username");
+        String paramUsername = req.getParameter("usuario");
         String paramPassword = req.getParameter("password");
         
         if (authenticationService.authenticate(paramUsername, paramPassword)) {
