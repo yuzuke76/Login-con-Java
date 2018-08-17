@@ -17,12 +17,12 @@
 <html lang="en">
     <head>
 
-        <title>Hello, world!</title>
+        <title>Página de Confirmación</title>
         <%@include file="templates/header.jsp" %>
     </head>
     <body>
         <%@include file="templates/navbar.jsp" %>
-        <div class="container"><h1>Reserved area for: ${user}</h1>
+        <div class="container"><h1>Area Reservada para: ${user}</h1>
 
 
         </div>
