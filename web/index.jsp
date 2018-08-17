@@ -10,11 +10,11 @@
 <html lang="en">
     <head>
         
-        <title>Hello, world!</title>
+        <title>Bienvenidos a la página de Inicio de Sesión</title>
         <%@include file="templates/header.jsp" %>
     </head>
     <body>
         <%@include file="templates/navbar.jsp" %>
-        <a href="${pageContext.request.contextPath}/register.jsp">Register</a>
+        <a href="${pageContext.request.contextPath}/register.jsp">Registrese</a>
             </body>
 </html>
