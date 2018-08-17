@@ -1,8 +1,3 @@
-<%-- 
-    Document   : success
-    Created on : 24-mar-2018, 18.22.51
-    Author     : prof.andreapollini
---%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
