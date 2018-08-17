@@ -1,15 +1,10 @@
-<%-- 
-    Document   : login
-    Created on : 24-mar-2018, 18.05.45
-    Author     : prof.andreapollini
---%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!doctype html>
-<html lang="en">
+<html lang="es">
     <head>
 
-        <title>Hello, world!</title>
+        <title>Pagina de Inicio de Sesion</title>
         <%@include file="templates/header.jsp" %>
     </head>
     <body>
