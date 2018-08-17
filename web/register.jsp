@@ -14,8 +14,8 @@
 
             <form action="${pageContext.request.contextPath}/register" method="POST">
                 <div class="form-group">
-                    <label for="username">Usuario</label>
-                    <input type="text" id="username" name="username"/>
+                    <label for="usuario">Usuario</label>
+                    <input type="text" id="usuario" name="usuario"/>
                 </div>
                 <div class="form-group">
                     <label for="password">Password</label>
