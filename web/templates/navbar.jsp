@@ -1,8 +1,3 @@
-<%-- 
-    Document   : navbar
-    Created on : 26-mar-2018, 21.52.23
-    Author     : prof.andreapollini
---%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
@@ -18,8 +13,8 @@
                 <a class="nav-item nav-link" href="${pageContext.request.contextPath}/login.jsp">Login</a>
                 <a class="nav-item nav-link" href="${pageContext.request.contextPath}/logout">Logout</a>
                 
-                <a class="nav-item nav-link" href="#">Pricing</a>
-                <a class="nav-item nav-link disabled" href="#">Hi,${user}</a>
+                <a class="nav-item nav-link" href="#">Eventos</a>
+                <a class="nav-item nav-link disabled" href="#">Hola,${user}</a>
             </div>
         </div>
     </nav>
