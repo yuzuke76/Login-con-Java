@@ -30,23 +30,21 @@ public class LoginServlet extends HttpServlet {
         String paramPassword = req.getParameter("password");
         
         if (authenticationService.authenticate(paramUsername, paramPassword)) {
-            //Se l'autenticazione va a buon fine
             
-            // Recupero la sessione
             HttpSession oldSession = req.getSession(false);
             if (oldSession != null) {
-                oldSession.invalidate(); //invalida la sessione se esiste
+                oldSession.invalidate(); 
             }
             
-            HttpSession currentSession = req.getSession(); //crea una nuova sessione
+            HttpSession currentSession = req.getSession(); 
             currentSession.setAttribute("user", paramUsername);
-            currentSession.setMaxInactiveInterval(5*60); //5 minuti di inattività massima
+            currentSession.setMaxInactiveInterval(5*60); 
             
-            resp.sendRedirect("success.jsp"); //vai alla pagina success.jsp
+            resp.sendRedirect("success.jsp"); 
             
             
         } else {
-            // Se l'autenticazione fallisce
+           
             resp.sendRedirect("login.jsp");
         }
     
