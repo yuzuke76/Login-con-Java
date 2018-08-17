@@ -29,7 +29,7 @@ public class LoginServlet extends HttpServlet {
         String paramUsername = req.getParameter("usuario");
         String paramPassword = req.getParameter("password");
         
-        if (authenticationService.authenticate(paramUsername, paramPassword)) {
+        if (authenticationService.authenticate(paramUsuario, paramPassword)) {
             
             HttpSession oldSession = req.getSession(false);
             if (oldSession != null) {
@@ -37,7 +37,7 @@ public class LoginServlet extends HttpServlet {
             }
             
             HttpSession currentSession = req.getSession(); 
-            currentSession.setAttribute("user", paramUsername);
+            currentSession.setAttribute("user", paramUsuario);
             currentSession.setMaxInactiveInterval(5*60); 
             
             resp.sendRedirect("success.jsp"); 
