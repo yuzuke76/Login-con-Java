@@ -1,8 +1,3 @@
-<%-- 
-    Document   : footer
-    Created on : 26-mar-2018, 21.53.24
-    Author     : prof.andreapollini
---%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!-- Optional JavaScript -->
