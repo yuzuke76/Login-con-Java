@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package com.ap.logindemo;
 
 import java.io.IOException;
@@ -13,10 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- *
- * @author prof.andreapollini
- */
+
 @WebServlet(name = "RegisterServlet", urlPatterns = {"/register"})
 public class RegisterServlet extends HttpServlet {
 
@@ -24,7 +17,7 @@ public class RegisterServlet extends HttpServlet {
 
     @Override
     public void init() throws ServletException {
-        super.init(); //To change body of generated methods, choose Tools | Templates.
+        super.init(); 
 
         
         authService = new AuthenticationService();
@@ -32,12 +25,12 @@ public class RegisterServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String username = req.getParameter("username");
+        String username = req.getParameter("usuario");
         String password = req.getParameter("password");
         String passwordRep = req.getParameter("passwordRep");
         
         if(!password.equals(passwordRep)) {
-            req.setAttribute("error", "Passwords doesn't match");
+            req.setAttribute("error", "Passwords no coinciden");
             req.getRequestDispatcher("register.jsp").forward(req, resp);
             
             return;
