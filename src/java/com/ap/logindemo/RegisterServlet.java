@@ -36,7 +36,7 @@ public class RegisterServlet extends HttpServlet {
             return;
         }
         
-        User u = new User(username, password);
+        User u = new User(usuario, password);
         
         if(!authService.registerUser(u)) {
             resp.sendRedirect("register.jsp");
