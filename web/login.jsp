@@ -14,11 +14,11 @@
     </head>
     <body>
         <%@include file="templates/navbar.jsp" %>
-        <div class="container"><h1>Login Page</h1>
+        <div class="container"><h1>Pagina de Inicio de Sesion</h1>
 
 
             <form action="${pageContext.request.contextPath}/login" method="POST">
-                <input type="text" name="username"/>
+                <input type="text" name="usuario"/>
                 <input type="password" name="password" />
                 <input type="submit" value="Login"/>
             </form>
