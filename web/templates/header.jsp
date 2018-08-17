@@ -1,9 +1,3 @@
-<%-- 
-    Document   : header
-    Created on : 26-mar-2018, 21.51.22
-    Author     : prof.andreapollini
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!-- Required meta tags -->
 <meta charset="utf-8">
